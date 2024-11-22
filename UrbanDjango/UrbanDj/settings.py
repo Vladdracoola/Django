@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'UrbanDj.example1',
+    'Task2',
 ]
 
 MIDDLEWARE = [
