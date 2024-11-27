@@ -17,11 +17,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from Task4.views import index, games, books
+from Task5.views import sign_up_by_html, sign_up_by_django
 from django.views.generic import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', index),
+    path('', sign_up_by_html),
+    path('html/', sign_up_by_html),
+    path('django/', sign_up_by_django),
+
     path('index/', TemplateView.as_view(template_name='fourth_task/main.html')),
     path('games/', games),
     path('games/', TemplateView.as_view(template_name='fourth_task/games.html')),
